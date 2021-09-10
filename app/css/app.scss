@@ -1,0 +1,34 @@
+// =================
+// UTILS (помощники) вспомогательные штуки
+// =================
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/extends";
+
+
+// =================
+// BASE (основные шрифты, файл нормализации)
+// =================
+@import "base/fonts";
+@import "base/resets";
+
+
+// =================
+// LAYOUT
+// =================
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/layout";
+
+
+// =================
+// PAGES
+// =================
+@import "pages/index";
+
+
+// =================
+// COMPONENTS
+// =================
+@import "components/button";

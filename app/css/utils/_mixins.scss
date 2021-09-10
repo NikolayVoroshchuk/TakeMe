@@ -1,0 +1,30 @@
+@mixin size($width, $height: $width) {
+  height: $height;
+  width: $width;
+}
+
+@mixin max-size($width, $height: $width) {
+  max-height: $height;
+  max-width: $width;
+}
+
+@mixin reset {
+  margin: 0;
+ padding: 0;
+}
+
+@mixin hover-white {
+  &:hover {
+  color: $white;
+  background-color: $light_grey;
+ }
+}
+
+@mixin hover-blue {
+  color: $white;
+
+ &:hover {
+  background-color: lighten(#4a90f0, 5%);
+  color: $white;
+ }
+}
