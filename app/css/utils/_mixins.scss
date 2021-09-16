@@ -10,21 +10,21 @@
 
 @mixin reset {
   margin: 0;
- padding: 0;
+  padding: 0;
 }
 
 @mixin hover-white {
   &:hover {
-  color: $white;
-  background-color: $light_grey;
- }
+    color: $white;
+    background-color: $light_grey;
+  }
 }
 
 @mixin hover-blue {
   color: $white;
 
- &:hover {
-  background-color: lighten(#4a90f0, 5%);
-  color: $white;
- }
+  &:hover {
+    background-color: lighten(#4a90f0, 5%);
+    color: $white;
+  }
 }
