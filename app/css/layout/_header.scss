@@ -1,3 +1,6 @@
+.head {
+    background-color: $white;
+}
 .navbar-nav {
     margin: 0 auto;
     display: flex;
@@ -7,26 +10,26 @@
         line-height: 0.28;
         padding: 15px;
         a {
-            color: #343434 !important;
+            color: $night-rider !important;
         }
     }
 }
 .head__body {
     background: url(../../img/header/bg-header.png) 0 0 / cover no-repeat;
     height: 600px;
-    .title {
+    .head__title {
         padding-top: 11.68rem;
         h1 {
-            color: #fff;
+            color: $white;
             font-size: 47px;
             font-weight: bold;
             text-align: left;
         }
     }
-    .subtitle {
+    .head__subtitle {
         padding-top: 2.5rem;
         h4 {
-            color: #fff;
+            color: $white;
             font-size: 16px;
         }
     }
@@ -34,41 +37,42 @@
         padding-top: 3rem;
         ::placeholder {
             font-size: 12px;
-            color: #b7b7b7;
+            color: $pink-swan;
         }
         .country_or_zip {
             min-width: 300px;
             height: 40px;
             border-radius: 4px;
-            border: solid 2px #f5f5f5;
-            background-color: #fff;
+            border: solid 2px $white-smoke;
+            background-color: $white;
             padding-left: 15px;
         }
         .transportation {
             min-width: 300px;
             height: 40px;
             font-size: 12px;
-            color: #b7b7b7;
+            color: $pink-swan;
             border-radius: 4px;
-            border: solid 2px #f5f5f5;
-            background-color: #fff;
+            border: solid 2px $white-smoke;
+            background-color: $white;
             padding-left: 15px;
+            cursor: pointer;
         }
         .number_of_people {
             min-width: 300px;
             height: 40px;
             border-radius: 4px;
-            border: solid 2px #f5f5f5;
-            background-color: #fff;
+            border: solid 2px $white-smoke;
+            background-color: $white;
             padding-left: 15px;
         }
         a {
             height: 40px;
-            background-color: lightblue;
+            background-color: $summer-sky;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #fff;
+            color: $white;
             text-decoration: none;
             border-radius: 4px;
         }
