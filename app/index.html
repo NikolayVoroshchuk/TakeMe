@@ -42,11 +42,11 @@
         <div class="head__subtitle">
           <h4>Search hundreds of locations from around the world <br> and find your perfect vacation location.</h4>
         </div>
-        <form class="row form" action="#">
-          <div class="col">
+        <form class="row col-auto form" action="#">
+          <div class="col-4">
             <input type="text" class="country_or_zip" placeholder="Country or ZIP code">
           </div>
-          <div class="col">
+          <div class="col-3">
             <select class="transportation">
               <option value="transportation">Transportation</option>
               <option value="airplane">Airplane</option>
@@ -54,11 +54,11 @@
               <option value="train">Train</option>
             </select>
           </div>
-          <div class="col">
+          <div class="col-3">
             <input type="text" class="number_of_people" placeholder="Number of people">
           </div>
           <div class="col">
-            <a href="">Submit</a>
+            <button type="button" class="btn btn-info">Submit</button>
           </div>
         </form>
       </div>
@@ -324,6 +324,65 @@
             <div class="items__text">Expert Drivers</div>
             <div class="items__title">Quad Rides</div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <div class="row col">
+        <div class="text col-6">
+          <div class="text__title">
+            <h1>Subscribe to our newsletter</h1>
+          </div>
+          <div class="text__subtitle">
+            <span>And receive all the latest news, discounts and updates about the most visited
+              locations from around the globe, daily.</span>
+          </div>
+        </div>
+        <div class="button col-6">
+          <button type="button" class="btn btn-info">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us">
+    <div class="container">
+      <div class="row">
+        <div class="contact__body col-7">
+          <div class="contact__title">
+            <h1>Contact Us</h1>
+          </div>
+          <form class="contact__form row g-3" action="#">
+            <div class="col-5">
+              <label for="firstname" class="first-name">First Name</label>
+              <input type="text" class="form-control" id="firstname" placeholder="First Name">
+            </div>
+            <div class="col-5">
+              <label for="lastname" class="last-name">Last Name</label>
+              <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+            </div>
+            <div class="col-5">
+              <label for="email" class="e-mail">E-Mail</label>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="col-5">
+              <label for="phone" class="phone">Phone</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Phone">
+            </div>
+            <div class="col-10">
+              <label for="message" class="message">Message</label>
+              <input type="text" class="form-control" id="message" placeholder="Message">
+            </div>
+            <div class="button col-10">
+              <button type="button" class="btn btn-info">Send</button>
+            </div>
+          </form>
+        </div>
+        <div class="contact__img col-4">
+          <img src="./img/contact/image.png" alt="">
         </div>
       </div>
     </div>
