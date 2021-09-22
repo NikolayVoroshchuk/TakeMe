@@ -20,17 +20,17 @@
 <body id="main-page">
   <header class="head">
     <div class="container">
-      <nav class="navbar">
-        <div class="navbar-brand">
+      <nav class="navbar row">
+        <div class="navbar-brand col-2">
           <a href=""><img src="./img/header/logo.png" alt=""></a>
         </div>
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#">Locations</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Accommodation</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Travel Guides</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Where To Stay </a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Contact Us</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Log In</a></li>
+        <ul class="nav col">
+          <li class="nav-item col"><a class="nav-link active" href="#">Locations</a></li>
+          <li class="nav-item col"><a class="nav-link active" href="#">Accommodation</a></li>
+          <li class="nav-item col"><a class="nav-link active" href="#">Travel Guides</a></li>
+          <li class="nav-item col"><a class="nav-link active" href="#">Where To Stay </a></li>
+          <li class="nav-item col"><a class="nav-link active" href="#">Contact Us</a></li>
+          <li class="nav-item col"><a class="nav-link active" href="#">Log In</a></li>
         </ul>
       </nav>
     </div>
@@ -91,7 +91,7 @@
             <img src="./img/santorini/img3.png" alt="">
           </div>
         </div>
-        <div class="dots">
+        <div class="dots col d-flex justify-content-center">
           <div class="dot">
             <img src="./img/santorini/circle.png" alt="">
           </div>
@@ -341,7 +341,7 @@
               locations from around the globe, daily.</span>
           </div>
         </div>
-        <div class="button col-6">
+        <div class="button row col-6">
           <button type="button" class="btn btn-info">Subscribe</button>
         </div>
       </div>
@@ -374,7 +374,7 @@
             </div>
             <div class="col-10">
               <label for="message" class="message">Message</label>
-              <input type="text" class="form-control" id="message" placeholder="Message">
+              <textarea type="text" class="form-control message-input" id="message" placeholder="Message"></textarea>
             </div>
             <div class="button col-10">
               <button type="button" class="btn btn-info">Send</button>
@@ -383,6 +383,556 @@
         </div>
         <div class="contact__img col-4">
           <img src="./img/contact/image.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="container">
+      <div class="items row col">
+        <div class="number-reviews col-9">Reviews (256)</div>
+        <div class="sort-btn col">
+          <select class="sort">
+            <option value="sort">Sort</option>
+          </select>
+        </div>
+        <div class="post-btn col">
+          <button type="button" class="btn btn-light">Post A Review</button>
+        </div>
+      </div>
+      <div class="reviewes__body">
+        <div class="review row">
+          <div class="row col-4 user">
+            <div class="review__img col-4">
+              <img src="./img/reviewes/avatar1.png" alt="">
+            </div>
+            <div class="review__name row col">
+              <span>Anna Marksson</span>
+              <div class="review__visited row">
+                <span>Visited Las Vegas</span>
+              </div>
+              <div class="review__rating row">
+                <div class="items__rating">
+                  <form action="#" class="form-stars">
+                    <div class="form__star">
+                      <div class="rating">
+                        <div class="rating__items">
+                          <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                          <label for="rating__5" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                          <label for="rating__4" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                          <label for="rating__3" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                          <label for="rating__2" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                          <label for="rating__1" class="rating__label"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment col">
+            <div class="review__title">We had a lovely time
+            </div>
+            <div class="review__date">02.17.2017</div>
+            <div class="review__text">“I don’t know where to start. It was simply amazing! From the time we got there to
+              the staff at our hotel, to our Uber
+              driver, to
+              the meals at our restaurant, i can’t wait until we visit Las Vegas again!”</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviewes__body">
+        <div class="review row">
+          <div class="row col-4 user">
+            <div class="review__img col-4">
+              <img src="./img/reviewes/avatar2.png" alt="">
+            </div>
+            <div class="review__name row col">
+              <span>Edward Signim
+              </span>
+              <div class="review__visited row">
+                <span>Visited Rome</span>
+              </div>
+              <div class="review__rating row">
+                <div class="items__rating">
+                  <form action="#" class="form-stars">
+                    <div class="form__star">
+                      <div class="rating">
+                        <div class="rating__items">
+                          <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                          <label for="rating__5" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                          <label for="rating__4" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                          <label for="rating__3" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                          <label for="rating__2" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                          <label for="rating__1" class="rating__label"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment col">
+            <div class="review__title">Magical Rome!
+            </div>
+            <div class="review__date">02.16.2017</div>
+            <div class="review__text">“Everybody knows how much history this city has, but we were not prepared by just
+              how much it is! At every single corner
+              you
+              can find a piece of history that is there for thousands of years. If you didn’t visit, what you are
+              waiting for?”</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviewes__body">
+        <div class="review row">
+          <div class="row col-4 user">
+            <div class="review__img col-4">
+              <img src="./img/reviewes/avatar3.png" alt="">
+            </div>
+            <div class="review__name row col">
+              <span>Jenna Miles
+              </span>
+              <div class="review__visited row">
+                <span>Visited Belgrade</span>
+              </div>
+              <div class="review__rating row">
+                <div class="items__rating">
+                  <form action="#" class="form-stars">
+                    <div class="form__star">
+                      <div class="rating">
+                        <div class="rating__items">
+                          <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                          <label for="rating__5" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                          <label for="rating__4" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                          <label for="rating__3" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                          <label for="rating__2" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                          <label for="rating__1" class="rating__label"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment col">
+            <div class="review__title">Where Sava meets Danube
+            </div>
+            <div class="review__date">02.15.2017</div>
+            <div class="review__text">“This city is nothing what i expected. Such a lively place, full of color,
+              wonderful people and fantastic food. Service
+              is lovely and
+              my tour guide showed me much more than it was planned, simply because he is amazing at his job! I can’t
+              wait to go
+              back!”</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviewes__body">
+        <div class="review review-border row">
+          <div class="row col-4 user">
+            <div class="review__img col-4">
+              <img src="./img/reviewes/avatar4.png" alt="">
+            </div>
+            <div class="review__name row col">
+              <span>Jonathan Bright
+              </span>
+              <div class="review__visited row">
+                <span>Visited Tahiti</span>
+              </div>
+              <div class="review__rating row">
+                <div class="items__rating">
+                  <form action="#" class="form-stars">
+                    <div class="form__star">
+                      <div class="rating">
+                        <div class="rating__items">
+                          <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                          <label for="rating__5" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                          <label for="rating__4" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                          <label for="rating__3" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                          <label for="rating__2" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                          <label for="rating__1" class="rating__label"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="comment col">
+            <div class="review__title">White sand, blue skies
+
+            </div>
+            <div class="review__date">02.14.2017</div>
+            <div class="review__text">“When we got there it was raining, but after it stopped, it was lovely!
+              Temperature is pleasant and i loved their free
+              wifi zones.
+              If you have, bring your camera because you are going to need it, a lot.”</div>
+          </div>
+        </div>
+      </div>
+      <div class="button row justify-content-center col">
+        <button type="button" class="btn btn-info">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="search-travel">
+    <div class="container">
+      <div class="title">
+        <h4>Where do you want to travel today?</h4>
+      </div>
+      <div class="items row">
+        <div class="tags row col-7">
+          <div class="tag col">
+            <span>USA</span>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+          </div>
+          <div class="tag col">
+            <span>New York</span>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+          </div>
+          <div class="tag col">
+            <span>City Life</span>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+          </div>
+          <div class="tag col">
+            <span>Cheap</span>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="buttons row col-4">
+          <div class="col-4">
+            <button type="button" class="btn btn-link">List View</button>
+          </div>
+          <div class="col-4">
+            <button type="button" class="btn btn-link">Map View</button>
+          </div>
+          <div class="col-4">
+            <select class="sortby">
+              <option value="sortby">Sort By</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="travel-offers">
+      <div class="container">
+        <div class="card-group row">
+          <div class="card">
+            <div class="card__body">
+              <div class="card__header row col">
+                <div class="card__title col-6">
+                  <h5>New York Skyline Tour <br>
+                    The best of New York</h5>
+                </div>
+                <div class="card__rating col-6">
+                  <form action="#" class="form-stars">
+                    <div class="form__star">
+                      <div class="rating">
+                        <div class="rating__items">
+                          <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                          <label for="rating__5" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                          <label for="rating__4" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                          <label for="rating__3" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                          <label for="rating__2" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                          <label for="rating__1" class="rating__label"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="card__reviews col">
+                    <div class="card__reviews-text">
+                      146 Reviews
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__image">
+                <img src="./img/search-travel/img1.png" class="card-img-top">
+                <img src="./img/search-travel/price1.png" class="card-img-price">
+              </div>
+              <div class="card__text">
+                <p>Take a look at New York from above, the best way
+                  to see this city. You will find all the classic buildings,
+                  sights and more plus there is a lunch after the tour.</p>
+              </div>
+            </div>
+            <div class="card__footer row">
+              <div class="spaces col-6">
+                <img src="./img/search-travel/people-icn.png" alt="">
+                <p>126 spaces left</p>
+              </div>
+              <div class="button col-6">
+                <button type="button" class="btn btn-info">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__body">
+              <div class="card__header row col">
+                <div class="card__title col-6">
+                  <h5>New York City <br>
+                    Walking tour</h5>
+                </div>
+                <div class="card__rating col-6">
+                  <form action="#" class="form-stars">
+                    <div class="form__star">
+                      <div class="rating">
+                        <div class="rating__items">
+                          <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                          <label for="rating__5" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                          <label for="rating__4" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                          <label for="rating__3" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                          <label for="rating__2" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                          <label for="rating__1" class="rating__label"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="card__reviews col">
+                    <div class="card__reviews-text">
+                      292 Reviews
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__image">
+                <img src="./img/search-travel/img2.png" class="card-img-top">
+                <img src="./img/search-travel/price2.png" class="card-img-price">
+              </div>
+              <div class="card__text">
+                <p>Take a look at New York from the street level, walk
+                  like a New Yorker. You will see all the classic things,
+                  sights and more plus there is a lunch after the tour.</p>
+              </div>
+            </div>
+            <div class="card__footer row">
+              <div class="spaces col-6">
+                <img src="./img/search-travel/people-icn.png" alt="">
+                <p>243 spaces left</p>
+              </div>
+              <div class="button col-6">
+                <button type="button" class="btn btn-info">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__body">
+              <div class="card__header row col">
+                <div class="card__title col-6">
+                  <h5>New York City <br>
+                    The Food Tour</h5>
+                </div>
+                <div class="card__rating col-6">
+                  <form action="#" class="form-stars">
+                    <div class="form__star">
+                      <div class="rating">
+                        <div class="rating__items">
+                          <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                          <label for="rating__5" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                          <label for="rating__4" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                          <label for="rating__3" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                          <label for="rating__2" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                          <label for="rating__1" class="rating__label"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="card__reviews col">
+                    <div class="card__reviews-text">
+                      381 Reviews
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card__image">
+                <img src="./img/search-travel/img3.png" class="card-img-top">
+                <img src="./img/search-travel/price3.png" class="card-img-price">
+              </div>
+              <div class="card__text">
+                <p>Learn where are all the best places to eat in this city,
+                  how to find your way around thousands of great and
+                  tasty restaurants and lear New York trough it’s food.</p>
+              </div>
+            </div>
+            <div class="card__footer row">
+              <div class="spaces col-6">
+                <img src="./img/search-travel/people-icn.png" alt="">
+                <p>110 spaces left</p>
+              </div>
+              <div class="button col-6">
+                <button type="button" class="btn btn-info">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion row">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Language Spoken
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non animi nam, velit minus itaque facilis.
+                Beatae, sed. Beatae facere quasi nesciunt natus libero. Distinctio nostrum impedit possimus earum, at a.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Meal Type
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolore earum possimus ipsa corporis.
+                Officia expedita consequuntur veritatis molestiae! Facere dicta illum temporibus dignissimos nostrum
+                sunt quibusdam nihil quam id.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Excursions
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cum labore enim, fuga similique eos
+                aliquid. Iusto eos sapiente tenetur magni totam consequuntur, commodi eius dolorem reprehenderit
+                deleniti ab odit?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Hotel Type
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cum labore enim, fuga similique eos
+                aliquid. Iusto eos sapiente tenetur magni totam consequuntur, commodi eius dolorem reprehenderit
+                deleniti ab odit?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Room Type
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cum labore enim, fuga similique eos
+                aliquid. Iusto eos sapiente tenetur magni totam consequuntur, commodi eius dolorem reprehenderit
+                deleniti ab odit?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Rent A Car
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cum labore enim, fuga similique eos
+                aliquid. Iusto eos sapiente tenetur magni totam consequuntur, commodi eius dolorem reprehenderit
+                deleniti ab odit?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Shuttle Transport
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cum labore enim, fuga similique eos
+                aliquid. Iusto eos sapiente tenetur magni totam consequuntur, commodi eius dolorem reprehenderit
+                deleniti ab odit?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Parking
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cum labore enim, fuga similique eos
+                aliquid. Iusto eos sapiente tenetur magni totam consequuntur, commodi eius dolorem reprehenderit
+                deleniti ab odit?
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
