@@ -100,12 +100,14 @@
     position: relative;
     &:before {
       @extend %arrows;
+      position: absolute;
       content: "⟨";
       left: -50px;
       bottom: 180px;
     }
     &:after {
       @extend %arrows;
+      position: absolute;
       content: "⟩";
       right: -50px;
       bottom: 180px;
@@ -382,6 +384,7 @@
   }
   .items {
     margin-bottom: 3.813rem;
+    justify-content: center;
     .tag {
       display: flex;
       align-items: center;
@@ -434,6 +437,10 @@
         margin-right: 1.813rem;
         &:last-child {
           margin-right: 0rem;
+        }
+        .card__body {
+          max-height: 25rem;
+          height: 100%;
         }
         .card__header {
           align-items: baseline;
@@ -496,6 +503,190 @@
             color: $white !important;
           }
         }
+      }
+    }
+    .accordion {
+      margin-top: 1.25rem;
+      .accordion-item {
+        border-radius: 6px;
+        .accordion-header {
+          margin-bottom: 0px !important;
+        }
+        .accordion-button {
+          h6 {
+            color: $night-rider;
+          }
+        }
+        .accordion-body {
+          .list-group {
+            .list-group-item {
+              border: none;
+              span {
+                color: $grey;
+                font-size: 14px;
+              }
+            }
+            a {
+              color: $grey;
+              font-size: 14px;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+      .list-wrapper {
+        background: $white;
+        border-radius: 6px;
+        height: 45px;
+        margin-top: 1.25rem;
+        margin-bottom: 0rem !important;
+        span {
+          padding-left: 10px;
+          font-size: 13.5px;
+          color: $grey;
+        }
+      }
+    }
+    .floating {
+      margin-top: 1.25rem;
+      .form-wrapper {
+        max-height: 150px;
+        height: 100%;
+        background: $white;
+        border-radius: 6px;
+        padding: 1.25rem;
+      }
+      .form-floating {
+        label {
+          font-size: 13.5px;
+          color: $grey;
+        }
+      }
+      .accordion {
+        .range {
+          max-height: 125px;
+          height: 100%;
+        }
+      }
+      .list-group-item {
+        border: none;
+        span {
+          color: $grey;
+          font-size: 14px;
+        }
+      }
+      .wrapper {
+        max-height: 125px;
+        height: 100%;
+        margin-top: 1.25rem;
+        .list-group-item {
+          margin-top: 8px;
+          margin-bottom: 16px;
+          &:last-child {
+            margin-top: -8px;
+            margin-bottom: 0px;
+          }
+          span {
+            font-size: 14px;
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+    .pages {
+      background: $white;
+      border-radius: 6px;
+      margin-top: 1.25rem;
+      margin-bottom: 1.25rem;
+      .page__navigation {
+        ul {
+          padding-top: 1.5rem;
+          padding-bottom: 1rem;
+          position: relative;
+          &:before {
+            position: absolute;
+            @extend %arrows;
+            content: "⟨";
+            left: 5rem;
+            bottom: 15px;
+          }
+          &:after {
+            position: absolute;
+            @extend %arrows;
+            content: "⟩";
+            right: 5rem;
+            bottom: 15px;
+          }
+        }
+        li {
+          padding-right: 1.5rem;
+          &:last-child {
+            padding-right: 0rem;
+          }
+          a {
+            color: $grey;
+          }
+        }
+      }
+    }
+    .map {
+      iframe {
+        margin-bottom: 1.25rem;
+      }
+    }
+    .dubai {
+      background: url(../../../img/search-travel/background.png) 0 0 / cover no-repeat;
+      .dubai__title {
+        padding-top: 3.5rem;
+        h1 {
+          color: $white;
+          font-size: 47px !important;
+          text-align: center;
+        }
+      }
+      .dubai__video {
+        margin-top: 3.625rem;
+        img {
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+.download-app {
+  background-color: $white-smoke;
+  border-top: 1.25rem solid $light-grey;
+  overflow: hidden;
+  .app__body {
+    .app__img {
+      margin-top: 30px;
+      img {
+        cursor: pointer;
+      }
+    }
+    .app__title {
+      margin-top: 10rem;
+      h1 {
+        color: $grey;
+        font-size: 47px !important;
+        margin-bottom: 1.188rem;
+      }
+    }
+    .app__subtitle {
+      font-size: 16px;
+      color: $grey;
+      margin-bottom: 2.813rem;
+    }
+    .app__button {
+      .btn {
+        max-width: 270px;
+        width: 100%;
+        height: 40px;
+      }
+      .btn-info {
+        font-size: 14px;
+        color: $white !important;
       }
     }
   }
