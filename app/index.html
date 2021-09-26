@@ -6,422 +6,1229 @@
 
 <head>
   <!-- Заголовок страницы в браузере -->
-  <title>Dart Service Manager</title>
+  <title>TakeMe</title>
   <!-- Подключаем CSS -->
   <link rel="stylesheet" href="/css/app.css">
   <link rel="stylesheet" href="/css/libs.min.css">
   <!-- Кодировка страницы -->
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link type='text/css' href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;800&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="/js/libs.min.js"></script>
 </head>
 <!-- Отображаемое тело страницы -->
 
 <body id="main-page">
   <header class="head">
     <div class="container">
-      <div class="row head__content">
-        <div class="row head__items">
-          <div class="row head__logo">
-            <div class="head__logo-wrapper">
-              <img src="./img/icons/shape-1.png" alt="" />
-            </div>
-            <p>Dart <br><b>service manager</b></p>
-          </div>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a class="service" href="">Service</a></li>
-            <li><a href="">Extension</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Help</a></li>
-          </ul>
-          <div class="row button">
-            <button>sign up</button>
-          </div>
+      <nav class="navbar row">
+        <div class="navbar-brand col-2">
+          <a href=""><img src="./img/header/logo.png" alt=""></a>
         </div>
-        <div class="head__elements">
-          <div class="col-2 row text">
-            <h1>Lorem ipsum dolor sit amet</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
-              esse fuga unde mollitia beatae aliquam suscipit ullam ut
-              corrupti voluptatibus nobis harum, velit reprehenderit ipsum,
-              modi consequatur? Obcaecati, eos optio.
-            </p>
-            <div class="buttons">
-              <button class="buynow">BUY NOW</button>
-              <button class="tryforfree">TRY FOR FREE</button>
-            </div>
-          </div>
-          <div class="img">
-            <img src="./img/head/elements.png" alt="" />
-          </div>
+        <ul class="nav col">
+          <li class="nav-item col"><a class="nav-link active" href="#">Locations</a></li>
+          <li class="nav-item col"><a class="nav-link active" href="#">Accommodation</a></li>
+          <li class="nav-item col"><a class="nav-link active" href="#">Travel Guides</a></li>
+          <li class="nav-item col"><a class="nav-link active" href="#">Where To Stay </a></li>
+          <li class="nav-item col"><a class="nav-link active" href="#">Contact Us</a></li>
+          <li class="nav-item col"><a class="nav-link active" href="#">Log In</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="head__body">
+      <div class="container">
+        <div class="head__title">
+          <h1>Find Your Dream <br> Vacation Location</h1>
         </div>
+        <div class="head__subtitle">
+          <h4>Search hundreds of locations from around the world <br> and find your perfect vacation location.</h4>
+        </div>
+        <form class="row col-auto form" action="#">
+          <div class="col-4">
+            <input type="text" class="country_or_zip" placeholder="Country or ZIP code">
+          </div>
+          <div class="col-3">
+            <select class="transportation">
+              <option value="transportation">Transportation</option>
+              <option value="airplane">Airplane</option>
+              <option value="bus">Bus</option>
+              <option value="train">Train</option>
+            </select>
+          </div>
+          <div class="col-3">
+            <input type="text" class="number_of_people" placeholder="Number of people">
+          </div>
+          <div class="col">
+            <button type="button" class="btn btn-info">Submit</button>
+          </div>
+        </form>
       </div>
     </div>
   </header>
 
-  <section class="easy-useful">
-    <div class="container easy">
-      <div class="easy__title">
-        <h1>Easy & Useful</h1>
-        <h4>Project Management Tool</h4>
-        <h5>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud
-        </h5>
-      </div>
-      <div class="row items">
-        <div class="item__easy">
-          <div class="easy__icon">
-            <img src="./img/easy & useful/1.png" alt="" />
-            <div class="easy__title">Title Goes Here</div>
-            <div class="easy__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.
-            </div>
-          </div>
-        </div>
-        <div class="item__easy">
-          <div class="easy__icon">
-            <img src="./img/easy & useful/2.png" alt="" />
-            <div class="easy__title">Title Goes Here</div>
-            <div class="easy__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.
-            </div>
-          </div>
-        </div>
-        <div class="item__easy">
-          <div class="easy__icon">
-            <img src="./img/easy & useful/3.png" alt="" />
-            <div class="easy__title">Title Goes Here</div>
-            <div class="easy__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua.
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="get-started">
-        <button>Get started</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="services">
-    <div class="row wrapper">
-      <div class="info__body">
-        <div class="info__item business">
-
-          <div class="info__wrap">
-            <div class="info__item icon">
-              <img src="./img/services/1.png" alt="" />
-              <span>12000+
-                <br />business</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="info__body">
-        <div class="info__item downloads">
-
-          <div class="info__wrap">
-            <div class="info__item icon">
-              <img src="./img/services/2.png" alt="" />
-              <span>60000+
-                <br />Downloads</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="info__body">
-        <div class="info__item freeinstals">
-
-          <div class="info__wrap">
-            <div class="info__item icon">
-              <img src="./img/services/3.png" alt="" />
-              <span>30000+
-                <br />Free Installs</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="info__body">
-        <div class="info__item prousers">
-
-          <div class="info__wrap">
-            <div class="info__item icon">
-              <img src="./img/services/4.png" alt="" />
-              <span>40000+
-                <br />Pro Users</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
+  <section class="santorini">
     <div class="container">
-      <div class="title-services">
-        <h1>Services</h1>
-        <h5>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-          minus doloremque dolorem sequi consequatur omnis?
-        </h5>
-      </div>
-      <div class="services-form">
-        <div class="services__container">
-          <div class="services__item">
-            <div class="services__header">
-              <div class="logo">
-                <img src="./img/services/logo/1.png" alt="">
-              </div>
-              <div class="title">Statistics</div>
-              <div class="arrow">&#9660</div>
-            </div>
-            <div class="services__content">
-              <img src="./img/services/img.png" alt="">
-              <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                <br>
-                <br>
-                <p>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                  dolor in reprehenderit in</p>
-              </div>
-            </div>
+      <div class="row content">
+        <div class="col-6 content__text">
+          <div class="content__title">
+            <h1>Magical Santorini <br> Greece’s Jewel</h1>
           </div>
-
-          <div class="services__item">
-            <div class="services__header">
-              <div class="logo">
-                <img src="./img/services/logo/2.png" alt="">
-              </div>
-              <div class="title">inbox</div>
-              <div class="arrow">&#9660</div>
-            </div>
-          </div>
-
-          <div class="services__item">
-            <div class="services__header">
-              <div class="logo">
-                <img src="./img/services/logo/3.png" alt="">
-              </div>
-              <div class="title">team</div>
-              <div class="arrow">&#9660</div>
-            </div>
-          </div>
-
-          <div class="services__item">
-            <div class="services__header">
-              <div class="logo">
-                <img src="./img/services/logo/4.png" alt="">
-              </div>
-              <div class="title">settings</div>
-              <div class="arrow">&#9660</div>
-            </div>
-          </div>
-
-          <div class="services__item">
-            <div class="services__header">
-              <div class="logo">
-                <img src="./img/services/logo/5.png" alt="">
-              </div>
-              <div class="title">feed</div>
-              <div class="arrow">&#9660</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="customers">
-    <div class="container body">
-      <div class="content__customers">
-        <div class="content__title">
-          <h1>What our customers have to say about us</h1>
-          <div class="content__text">
-            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, error consequatur. Doloribus architecto
-              adipisci aut?</h5>
+          <div class="content__subtitle">
+            <h4>Candy-colored houses carved into cliffs, sapphire waters, <br> gleaming white buildings topped with
+              half-spheres <br> the color of a stormy sky.</h4>
           </div>
           <div class="content__button">
-            <button class="getstarted">
-              GET STARTED
-            </button>
+            <button type="button" class="btn btn-info">Explore More</button>
           </div>
         </div>
-
-        <div class="content__images">
-          <div class="customer">
-            <div class="image-wrap">
-              <img src="./img/customers/ellipse-2.png" alt="">
-            </div>
-            <div class="customers__form">
-              <div class="customer__title">John Doe</div>
-              <p class="customer__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea
-            </div>
+        <div class="col-6 row content__images">
+          <div class="col content__img">
+            <img src="./img/santorini/img.png" alt="">
           </div>
-
-          <div class="customer">
-            <div class="image-wrap">
-              <img src="./img/customers/avatar.png" alt="">
-            </div>
-            <div class="customers__form">
-              <div class="customer__title">Khalessi</div>
-              <p class="customer__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea
-            </div>
+          <div class="col content__img">
+            <img src="./img/santorini/img2.png" alt="">
+          </div>
+          <div class="col content__img">
+            <img src="./img/santorini/img3.png" alt="">
+          </div>
+        </div>
+        <div class="dots col d-flex justify-content-center">
+          <div class="dot">
+            <img src="./img/santorini/circle.png" alt="">
+          </div>
+          <div class="dot">
+            <img src="./img/santorini/circle-2.png" alt="">
+          </div>
+          <div class="dot">
+            <img src="./img/santorini/circle-3.png" alt="">
+          </div>
+          <div class="dot">
+            <img src="./img/santorini/circle-4.png" alt="">
+          </div>
+          <div class="dot">
+            <img src="./img/santorini/circle-5.png" alt="">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="our-team">
-    <div class="container team">
-      <div class="content__team">
-        <div class="team__title">
-          <h1>Our Team</h1>
-          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna</h5>
-        </div>
-        <div class="row ">
-          <div class="team__item">
-            <div class="team__img">
-              <img src="./img/our_team/1.png" alt="">
-              <img class="border" src="./img/our_team/2.png" alt="">
-              <img src="./img/our_team/3.png" alt="">
+  <section class="suggestions">
+    <div class="container">
+      <div class="row items">
+        <ul class="item__body col-4">
+          <li class="item__img">
+            <img src="./img/suggestions/img1.png" alt="">
+          </li>
+          <li class="item__title">
+            <h3>Magical Paris</h3>
+          </li>
+          <li class="item_subtitle">
+            <span>City of light, one of the most famous cities in the world is waiting to be explored. Some of the
+              most
+              famous museums, food and landmarks are waiting
+              for you in Paris.</span>
+          </li>
+          <form action="#" class="form-stars">
+            <div class="form__star">
+              <div class="rating">
+                <div class="rating__items">
+                  <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                  <label for="rating__5" class="rating__label"></label>
+                  <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                  <label for="rating__4" class="rating__label"></label>
+                  <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                  <label for="rating__3" class="rating__label"></label>
+                  <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                  <label for="rating__2" class="rating__label"></label>
+                  <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                  <label for="rating__1" class="rating__label"></label>
+                </div>
+              </div>
+            </div>
+            <div class="item__rating">
+              <div class="item__rating-text">
+                <span>2436 Ratings</span>
+              </div>
+            </div>
+          </form>
+        </ul>
+
+        <ul class="item__body col-4">
+          <li class="item__img">
+            <img src="./img/suggestions/img2.png" alt="">
+          </li>
+          <li class="item__title">
+            <h3>Classic London</h3>
+          </li>
+          <li class="item_subtitle">
+            <span>City of history, one of the most famous cities in the world is waiting to be explored. Some of the
+              most
+              famous museums, food, pubs and landmarks are waiting for you in London.</span>
+          </li>
+          <form action="#" class="form-stars">
+            <div class="form__star">
+              <div class="rating">
+                <div class="rating__items">
+                  <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                  <label for="rating__5" class="rating__label"></label>
+                  <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                  <label for="rating__4" class="rating__label"></label>
+                  <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                  <label for="rating__3" class="rating__label"></label>
+                  <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                  <label for="rating__2" class="rating__label"></label>
+                  <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                  <label for="rating__1" class="rating__label"></label>
+                </div>
+              </div>
+            </div>
+            <div class="item__rating">
+              <div class="item__rating-text">
+                <span>5438 Ratings</span>
+              </div>
+            </div>
+          </form>
+        </ul>
+
+        <ul class="item__body col-4">
+          <li class="item__img">
+            <img src="./img/suggestions/img3.png" alt="">
+          </li>
+          <li class="item__title">
+            <h3>Famous New York</h3>
+          </li>
+          <li class="item_subtitle">
+            <span>City of fashion and yellow cabs, one of the most famous cities in the world is waiting to be explored.
+              Some of the most
+              famous museums, food and
+              landmarks are waiting for you in New York.</span>
+          </li>
+          <form action="#" class="form-stars">
+            <div class="form__star">
+              <div class="rating">
+                <div class="rating__items">
+                  <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                  <label for="rating__5" class="rating__label"></label>
+                  <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                  <label for="rating__4" class="rating__label"></label>
+                  <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                  <label for="rating__3" class="rating__label"></label>
+                  <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                  <label for="rating__2" class="rating__label"></label>
+                  <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                  <label for="rating__1" class="rating__label"></label>
+                </div>
+              </div>
+            </div>
+            <div class="item__rating">
+              <div class="item__rating-text">
+                <span>1243 Ratings</span>
+              </div>
+            </div>
+          </form>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="activities">
+    <div class="container">
+      <div class="items">
+        <div class="row col items__body">
+          <div class="items__image-sea col-4">
+            <div class="items__rating">
+              <form action="#" class="form-stars">
+                <div class="form__star">
+                  <div class="rating">
+                    <div class="rating__items">
+                      <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                      <label for="rating__5" class="rating__label"></label>
+                      <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                      <label for="rating__4" class="rating__label"></label>
+                      <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                      <label for="rating__3" class="rating__label"></label>
+                      <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                      <label for="rating__2" class="rating__label"></label>
+                      <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                      <label for="rating__1" class="rating__label"></label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="item__rating">
+              <div class="item__rating-text">
+                <span>126 Visited</span>
+              </div>
+            </div>
+            <div class="items__text">
+              <span>Professional Guides</span>
+            </div>
+            <div class="items__title">
+              <span>Sea Voyages</span>
             </div>
           </div>
+
+          <div class="items__image-mountain col-4">
+            <div class="items__rating">
+              <form action="#" class="form-stars">
+                <div class="form__star">
+                  <div class="rating">
+                    <div class="rating__items">
+                      <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                      <label for="rating__5" class="rating__label"></label>
+                      <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                      <label for="rating__4" class="rating__label"></label>
+                      <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                      <label for="rating__3" class="rating__label"></label>
+                      <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                      <label for="rating__2" class="rating__label"></label>
+                      <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                      <label for="rating__1" class="rating__label"></label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="item__rating">
+              <div class="item__rating-text">
+                <span>241 Visited</span>
+              </div>
+            </div>
+            <div class="items__text">
+              <span>Safe Guides</span>
+            </div>
+            <div class="items__title">
+              <span>Mountain Climbs</span>
+            </div>
+          </div>
+
+          <div class="items__image-rides col-4">
+            <div class="items__rating">
+              <form action="#" class="form-stars">
+                <div class="form__star">
+                  <div class="rating">
+                    <div class="rating__items">
+                      <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                      <label for="rating__5" class="rating__label"></label>
+                      <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                      <label for="rating__4" class="rating__label"></label>
+                      <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                      <label for="rating__3" class="rating__label"></label>
+                      <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                      <label for="rating__2" class="rating__label"></label>
+                      <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                      <label for="rating__1" class="rating__label"></label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="item__rating">
+              <div class="item__rating-text">
+                <span>296 Visited</span>
+              </div>
+            </div>
+            <div class="items__text"><span>Expert Drivers</span></div>
+            <div class="items__title"><span>Quad Rides</span></div>
+          </div>
         </div>
-        <div class="team__subtitle">
-          <h2>Sophie Turner</h2>
-          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magnaLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt </h5>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <div class="row col">
+        <div class="text col-6">
+          <div class="text__title">
+            <h1>Subscribe to our newsletter</h1>
+          </div>
+          <div class="text__subtitle">
+            <span>And receive all the latest news, discounts and updates about the most visited
+              locations from around the globe, daily.</span>
+          </div>
         </div>
-        <div class="team__social">
-          <ul class="icons">
-            <li>
-              <a href=""><img src="./img/our_team/img/1.png" alt=""></a>
-            </li>
-            <li>
-              <a href=""><img src="./img/our_team/img/2.png" alt=""></a>
-            </li>
-            <li>
-              <a href=""><img src="./img/our_team/img/3.png" alt=""></a>
-            </li>
-            <li>
-              <a href=""><img src="./img/our_team/img/4.png" alt=""></a>
-            </li>
-            <li><a href=""><img src="./img/our_team/img/5.png" alt=""></a>
-            </li>
-          </ul>
+        <div class="button row col-6">
+          <button type="button" class="btn btn-info">Subscribe</button>
         </div>
       </div>
     </div>
   </section>
 
   <section class="contact-us">
-    <div class="container contact">
-      <div class="content__contact">
-        <div class="contact__title">
-          <h1>Contact Us</h1>
-          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna</h5>
-        </div>
-        <div class="contact__form">
-          <form action="#" method="get" enctype="multipart/form-data">
-            <div class="forms">
-              <input class="firstname" placeholder="First Name" type="text">
-              <input class="lastname" placeholder="Last Name" type="text">
+    <div class="container">
+      <div class="row">
+        <div class="contact__body col-7">
+          <div class="contact__title">
+            <h1>Contact Us</h1>
+          </div>
+          <form class="contact__form row g-3" action="#">
+            <div class="col-5">
+              <label for="firstname" class="first-name">First Name</label>
+              <input type="text" class="form-control" id="firstname" placeholder="First Name">
             </div>
-            <div class="forms2">
-              <input class="email" placeholder="E-mail" type="email">
-              <input class="phone" placeholder="Phone" type="tel">
+            <div class="col-5">
+              <label for="lastname" class="last-name">Last Name</label>
+              <input type="text" class="form-control" id="lastname" placeholder="Last Name">
             </div>
-            <div class="forms3">
-              <textarea class="message" placeholder="Message" name="Message"></textarea>
+            <div class="col-5">
+              <label for="email" class="e-mail">E-Mail</label>
+              <input type="email" class="form-control" id="email" placeholder="Email">
             </div>
-            <div class="row">
-              <div>
-                <input class="checkbox" type="checkbox" name="subscribe to the newsletter" value="yes"><span>subscribe
-                  to the newsletter</span>
-              </div>
-              <div class="send">
-                <button>SEND</button>
-              </div>
+            <div class="col-5">
+              <label for="phone" class="phone">Phone</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Phone">
+            </div>
+            <div class="col-10">
+              <label for="message" class="message">Message</label>
+              <textarea type="text" class="form-control message-input" id="message" placeholder="Message"></textarea>
+            </div>
+            <div class="button col-10">
+              <button type="button" class="btn btn-info">Send</button>
             </div>
           </form>
+        </div>
+        <div class="contact__img col-4">
+          <img src="./img/contact/image.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="container">
+      <div class="items row col">
+        <div class="number-reviews col-9"><span>Reviews (256)</span></div>
+        <div class="sort-btn col">
+          <select class="sort">
+            <option value="sort">Sort</option>
+          </select>
+        </div>
+        <div class="post-btn col">
+          <button type="button" class="btn btn-light">Post A Review</button>
+        </div>
+      </div>
+      <div class="reviewes__body">
+        <div class="review row">
+          <div class="row col-4 user">
+            <div class="review__img col-4">
+              <img src="./img/reviewes/avatar1.png" alt="">
+            </div>
+            <div class="review__name row col">
+              <span>Anna Marksson</span>
+              <div class="review__visited row">
+                <span>Visited Las Vegas</span>
+              </div>
+              <div class="review__rating row">
+                <div class="items__rating">
+                  <form action="#" class="form-stars">
+                    <div class="form__star">
+                      <div class="rating">
+                        <div class="rating__items">
+                          <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                          <label for="rating__5" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                          <label for="rating__4" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                          <label for="rating__3" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                          <label for="rating__2" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                          <label for="rating__1" class="rating__label"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="comment col">
+            <li class="review__title">We had a lovely time
+            </li>
+            <li class="review__date">02.17.2017</li>
+            <li class="review__text">
+              “I don’t know where to start. It was simply amazing! From the time we got there to
+              the staff at our hotel, to our Uber
+              driver, to
+              the meals at our restaurant, i can’t wait until we visit Las Vegas again!”
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reviewes__body">
+        <div class="review row">
+          <div class="row col-4 user">
+            <div class="review__img col-4">
+              <img src="./img/reviewes/avatar2.png" alt="">
+            </div>
+            <div class="review__name row col">
+              <span>Edward Signim
+              </span>
+              <div class="review__visited row">
+                <span>Visited Rome</span>
+              </div>
+              <div class="review__rating row">
+                <div class="items__rating">
+                  <form action="#" class="form-stars">
+                    <div class="form__star">
+                      <div class="rating">
+                        <div class="rating__items">
+                          <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                          <label for="rating__5" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                          <label for="rating__4" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                          <label for="rating__3" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                          <label for="rating__2" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                          <label for="rating__1" class="rating__label"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="comment col">
+            <li class="review__title">Magical Rome!</li>
+            <li class="review__date">02.16.2017</li>
+            <li class="review__text">
+              “Everybody knows how much history this city has, but we were not prepared by just
+              how much it is! At every single corner
+              you
+              can find a piece of history that is there for thousands of years. If you didn’t visit, what you are
+              waiting for?”</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reviewes__body">
+        <div class="review row">
+          <div class="row col-4 user">
+            <div class="review__img col-4">
+              <img src="./img/reviewes/avatar3.png" alt="">
+            </div>
+            <div class="review__name row col">
+              <span>Jenna Miles
+              </span>
+              <div class="review__visited row">
+                <span>Visited Belgrade</span>
+              </div>
+              <div class="review__rating row">
+                <div class="items__rating">
+                  <form action="#" class="form-stars">
+                    <div class="form__star">
+                      <div class="rating">
+                        <div class="rating__items">
+                          <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                          <label for="rating__5" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                          <label for="rating__4" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                          <label for="rating__3" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                          <label for="rating__2" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                          <label for="rating__1" class="rating__label"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="comment col">
+            <li class="review__title">Where Sava meets Danube
+            </li>
+            <li class="review__date">02.15.2017</li>
+            <li class="review__text">
+              “This city is nothing what i expected. Such a lively place, full of color,
+              wonderful people and fantastic food. Service
+              is lovely and
+              my tour guide showed me much more than it was planned, simply because he is amazing at his job! I can’t
+              wait to go
+              back!”
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="reviewes__body">
+        <div class="review review-border row">
+          <div class="row col-4 user">
+            <div class="review__img col-4">
+              <img src="./img/reviewes/avatar4.png" alt="">
+            </div>
+            <div class="review__name row col">
+              <span>Jonathan Bright
+              </span>
+              <div class="review__visited row">
+                <span>Visited Tahiti</span>
+              </div>
+              <div class="review__rating row">
+                <div class="items__rating">
+                  <form action="#" class="form-stars">
+                    <div class="form__star">
+                      <div class="rating">
+                        <div class="rating__items">
+                          <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                          <label for="rating__5" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                          <label for="rating__4" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                          <label for="rating__3" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                          <label for="rating__2" class="rating__label"></label>
+                          <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                          <label for="rating__1" class="rating__label"></label>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="comment col">
+            <li class="review__title">White sand, blue skies
+            </li>
+            <li class="review__date">02.14.2017</li>
+            <li class="review__text">
+              “When we got there it was raining, but after it stopped, it was lovely!
+              Temperature is pleasant and i loved their free
+              wifi zones.
+              If you have, bring your camera because you are going to need it, a lot.”
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="button row justify-content-center col">
+        <button type="button" class="btn btn-info">Load More</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="search-travel">
+    <div class="container">
+      <div class="title">
+        <h4>Where do you want to travel today?</h4>
+      </div>
+      <div class="items row">
+        <div class="tags row col-8">
+          <div class="tag col">
+            <span>USA</span>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+          </div>
+          <div class="tag col">
+            <span>New York</span>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+          </div>
+          <div class="tag col">
+            <span>City Life</span>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+          </div>
+          <div class="tag col">
+            <span>Cheap</span>
+            <button type="button" class="btn-close" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="buttons row col-4">
+          <div class="col-4">
+            <button type="button" class="btn btn-link">List View</button>
+          </div>
+          <div class="col-4">
+            <button type="button" class="btn btn-link">Map View</button>
+          </div>
+          <div class="col-4">
+            <select class="sortby">
+              <option value="sortby">Sort By</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="travel-offers">
+      <div class="container">
+        <div class="row">
+          <div class="card-group">
+            <div class="card">
+              <div class="card__body">
+                <div class="card__header row col">
+                  <div class="card__title col-6">
+                    <h5>New York Skyline Tour <br>
+                      The best of New York</h5>
+                  </div>
+                  <div class="card__rating col-6">
+                    <form action="#" class="form-stars">
+                      <div class="form__star">
+                        <div class="rating">
+                          <div class="rating__items">
+                            <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                            <label for="rating__5" class="rating__label"></label>
+                            <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                            <label for="rating__4" class="rating__label"></label>
+                            <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                            <label for="rating__3" class="rating__label"></label>
+                            <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                            <label for="rating__2" class="rating__label"></label>
+                            <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                            <label for="rating__1" class="rating__label"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="card__reviews col">
+                      <div class="card__reviews-text">
+                        <span>146 Reviews</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__image">
+                  <img src="./img/search-travel/img1.png" class="card-img-top">
+                  <img src="./img/search-travel/price1.png" class="card-img-price">
+                </div>
+                <div class="card__text">
+                  <p>Take a look at New York from above, the best way
+                    to see this city. You will find all the classic buildings,
+                    sights and more plus there is a lunch after the tour.</p>
+                </div>
+              </div>
+              <div class="card__footer row">
+                <div class="spaces col-6">
+                  <img src="./img/search-travel/people-icn.png" alt="">
+                  <p>126 spaces left</p>
+                </div>
+                <div class="button col-6">
+                  <button type="button" class="btn btn-info">Book Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__body">
+                <div class="card__header row col">
+                  <div class="card__title col-6">
+                    <h5>New York City <br>
+                      Walking tour</h5>
+                  </div>
+                  <div class="card__rating col-6">
+                    <form action="#" class="form-stars">
+                      <div class="form__star">
+                        <div class="rating">
+                          <div class="rating__items">
+                            <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                            <label for="rating__5" class="rating__label"></label>
+                            <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                            <label for="rating__4" class="rating__label"></label>
+                            <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                            <label for="rating__3" class="rating__label"></label>
+                            <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                            <label for="rating__2" class="rating__label"></label>
+                            <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                            <label for="rating__1" class="rating__label"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="card__reviews col">
+                      <div class="card__reviews-text">
+                        <span>292 Reviews</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__image">
+                  <img src="./img/search-travel/img2.png" class="card-img-top">
+                  <img src="./img/search-travel/price2.png" class="card-img-price">
+                </div>
+                <div class="card__text">
+                  <p>Take a look at New York from the street level, walk
+                    like a New Yorker. You will see all the classic things,
+                    sights and more plus there is a lunch after the tour.</p>
+                </div>
+              </div>
+              <div class="card__footer row">
+                <div class="spaces col-6">
+                  <img src="./img/search-travel/people-icn.png" alt="">
+                  <p>243 spaces left</p>
+                </div>
+                <div class="button col-6">
+                  <button type="button" class="btn btn-info">Book Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__body">
+                <div class="card__header row col">
+                  <div class="card__title col-6">
+                    <h5>New York City <br>
+                      The Food Tour</h5>
+                  </div>
+                  <div class="card__rating col-6">
+                    <form action="#" class="form-stars">
+                      <div class="form__star">
+                        <div class="rating">
+                          <div class="rating__items">
+                            <input type="radio" class="rating__item" name="rating" id="rating__5" value="5">
+                            <label for="rating__5" class="rating__label"></label>
+                            <input type="radio" class="rating__item" name="rating" id="rating__4" value="4">
+                            <label for="rating__4" class="rating__label"></label>
+                            <input type="radio" class="rating__item" name="rating" id="rating__3" value="3">
+                            <label for="rating__3" class="rating__label"></label>
+                            <input type="radio" class="rating__item" name="rating" id="rating__2" value="2">
+                            <label for="rating__2" class="rating__label"></label>
+                            <input type="radio" class="rating__item" name="rating" id="rating__1" value="1">
+                            <label for="rating__1" class="rating__label"></label>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="card__reviews col">
+                      <div class="card__reviews-text">
+                        <span>381 Reviews</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__image">
+                  <img src="./img/search-travel/img3.png" class="card-img-top">
+                  <img src="./img/search-travel/price3.png" class="card-img-price">
+                </div>
+                <div class="card__text">
+                  <p>Learn where are all the best places to eat in this city,
+                    how to find your way around thousands of great and
+                    tasty restaurants and lear New York trough it’s food.</p>
+                </div>
+              </div>
+              <div class="card__footer row">
+                <div class="spaces col-6">
+                  <img src="./img/search-travel/people-icn.png" alt="">
+                  <p>110 spaces left</p>
+                </div>
+                <div class="button col-6">
+                  <button type="button" class="btn btn-info">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="accordion col-4">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <h6>Language Spoken</h6>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi perspiciatis eius, accusantium quam
+                    adipisci natus dolorum maiores iste. Obcaecati dolorum tenetur iure debitis excepturi ratione minima
+                    nihil repudiandae culpa enim!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h6>Meal Type</h6>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam excepturi impedit deleniti est
+                    ipsa
+                    quidem voluptates in odio culpa? Modi optio eveniet veritatis vero dolores pariatur consectetur
+                    repellat
+                    debitis voluptates!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <h6>Excursions</h6>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi veritatis inventore sit voluptates
+                    perferendis! Repellat facilis, dicta assumenda sit pariatur consequatur quisquam voluptas, quis
+                    veritatis omnis consectetur deleniti, eaque quaerat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <h6>Hotel Type</h6>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi veritatis inventore sit voluptates
+                    perferendis! Repellat facilis, dicta assumenda sit pariatur consequatur quisquam voluptas, quis
+                    veritatis omnis consectetur deleniti, eaque quaerat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  <h6>Room Type</h6>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi veritatis inventore sit voluptates
+                    perferendis! Repellat facilis, dicta assumenda sit pariatur consequatur quisquam voluptas, quis
+                    veritatis omnis consectetur deleniti, eaque quaerat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  <h6>Rent A Car</h6>
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi veritatis inventore sit voluptates
+                    perferendis! Repellat facilis, dicta assumenda sit pariatur consequatur quisquam voluptas, quis
+                    veritatis omnis consectetur deleniti, eaque quaerat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                  <h6>Shuttle Transport</h6>
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi veritatis inventore sit voluptates
+                    perferendis! Repellat facilis, dicta assumenda sit pariatur consequatur quisquam voluptas, quis
+                    veritatis omnis consectetur deleniti, eaque quaerat.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                  <h6>Parking</h6>
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi veritatis inventore sit voluptates
+                    perferendis! Repellat facilis, dicta assumenda sit pariatur consequatur quisquam voluptas, quis
+                    veritatis omnis consectetur deleniti, eaque quaerat.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion col-4">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne">
+                  <h6>Destinations</h6>
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <ul class="list-group">
+                    <li><a href="">Europe</a></li>
+                    <li><a href="">Asia</a></li>
+                    <li><a href="">Africa</a></li>
+                    <li><a href="">North America</a></li>
+                    <li><a href="">South America</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapse" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapse">
+                    <h6>Trip Type</h6>
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapse" class="accordion-collapse collapse show"
+                  aria-labelledby="panelsStayOpen-heading">
+                  <div class="accordion-body">
+                    <ul class="list-group">
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        <span>Round Trip</span>
+                      </label>
+                      <label class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        <span>One Way</span>
+                      </label>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="list-wrapper col d-flex align-items-center">
+              <label class="col">
+                <input class="form-check-input" type="checkbox" value="" aria-label="...">
+                <span>First Class</span>
+              </label>
+              <label class="col">
+                <input class="form-check-input" type="checkbox" value="" aria-label="...">
+                <span>Business</span>
+              </label>
+              <label class="col">
+                <input class="form-check-input" type="checkbox" value="" aria-label="...">
+                <span>Coach</span>
+              </label>
+            </ul>
+          </div>
+          <div class="floating col-4">
+            <div class="form-wrapper">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="country" placeholder="Where country you want to go?">
+                <label for="country">Where country you want to go?</label>
+              </div>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="city" placeholder="Where city you want to go?">
+                <label for="city">Where city you want to go?</label>
+              </div>
+            </div>
+            <div class="accordion col">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingRange">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseRange" aria-expanded="true" aria-controls="collapseRange">
+                    <h6>Price Range</h6>
+                  </button>
+                </h2>
+                <div id="collapseRange" class="accordion-collapse collapse show" aria-labelledby="headingRange">
+                  <div class="accordion-body">
+                    <input type="range" class="form-range">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-wrapper wrapper">
+              <ul class="list-group">
+                <label class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                  <span>Without Carry On</span>
+                </label>
+                <label class="list-group-item">
+                  <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                  <span>With Carry On</span>
+                </label>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="pages">
+          <nav class="page__navigation">
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">5</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">6</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81612.06312563072!2d28.670281983295197!3d50.26621949382004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c64a32bfa355d%3A0xf14ad2a3d9b9e229!2z0JbQuNGC0L7QvNC40YAsINCW0LjRgtC-0LzQuNGA0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDEwMDAw!5e0!3m2!1sru!2sua!4v1632402712811!5m2!1sru!2sua"
+          width="100%" height="435" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="dubai">
+        <div class="dubai__title">
+          <h1>See Dubai from the sky</h1>
+        </div>
+        <div class="dubai__video col d-flex justify-content-center">
+          <a href="https://www.youtube.com/watch?v=IdejM6wCkxA&ab_channel=DroneSnap" target="_blank">
+            <img src="./img/search-travel/imgDubai.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="download-app">
+    <div class="container">
+      <div class="app__body row col">
+        <div class="app__img col-4">
+          <img src="./img/app/iphone.png">
+        </div>
+        <div class="app__info col-8">
+          <div class="app__title">
+            <h1>Download Our Free App!</h1>
+          </div>
+          <div class="app__subtitle">
+            <p>Download our free app and stay up to date with all our latest discounts, articles and reviews. Take a
+              look
+              at
+              all the world’s top destinations and decide where to spend your perfect vacation.</p>
+          </div>
+          <div class="app__button">
+            <button type="button" class="btn btn-info">Download Now</button>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container footer__body">
-      <div class="content__footer">
-        <div class="row">
-          <div class="row__logo">
-            <div class="logo__wrapper">
-              <img src="./img/footer/shape-1.png" alt="">
-            </div>
-            <p>Dart <br><b>service manager</b></p>
+    <div class="container">
+      <div class="footer__body row">
+        <div class="footer__info company row col-2">
+          <div class="footer__title">
+            <h6>Company</h6>
           </div>
-          <ul class="menu__footer">
-            <li><a href="">Home</a></li>
-            <li><a href="">Service</a></li>
-            <li><a href="">Extension</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Help</a></li>
+          <ul class="footer__list row col">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Affiliates</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Our App</a></li>
+            <li><a href="">Site Map</a></li>
           </ul>
         </div>
-        <div class="row">
-          <ul class="row__privecy">
-            <li><a href="">Privecy Policy</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">About Us</a></li>
+
+        <div class="footer__info useful-links row col-2">
+          <div class="footer__title">
+            <h6>Useful Links</h6>
+          </div>
+          <ul class="footer__list row col">
+            <li><a href="">Travel Safe</a></li>
+            <li><a href="">Stay Healthy</a></li>
+            <li><a href="">Flight Monitor</a></li>
+            <li><a href="">Booking List</a></li>
+            <li><a href="">Lost Lugage</a></li>
+            <li><a href="">World Clock</a></li>
           </ul>
-          <ul class="row__links">
-            <li>
-              <a href="">
-                <img src="./img/footer/social/1.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./img/footer/social/2.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./img/footer/social/3.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./img/footer/social/4.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <img src="./img/footer/social/5.png" alt="">
-              </a>
-            </li>
+        </div>
+
+        <div class="footer__info for-companies row col-5">
+          <div class="footer__title">
+            <h6>For Companies</h6>
+          </div>
+          <ul class="footer__list row col">
+            <li><a href="">Advertise With Us</a></li>
+            <li><a href="">How it Works</a></li>
+            <li><a href="">Pricing Models</a></li>
+            <li><a href="">VAT Numbers</a></li>
           </ul>
+        </div>
+
+        <div class="footer__form row col">
+          <div class="form__title">
+            <h6>Stay in Touch</h6>
+          </div>
+          <form class="row g-3">
+            <div class="col-auto">
+              <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-info">Subscribe</button>
+            </div>
+          </form>
+          <div class="social row col">
+            <div class="social__item col">
+              <a href="#">
+                <img src="./img/footer/twitter-icn.png" alt="">
+              </a>
+            </div>
+            <div class="social__item col">
+              <a href="#">
+                <img src="./img/footer/instagram-icn.png" alt="">
+              </a>
+            </div>
+            <div class="social__item col">
+              <a href="#">
+                <img src="./img/footer/facebook-icn.png" alt="">
+              </a>
+            </div>
+            <div class="social__item col">
+              <a href="#">
+                <img src="./img/footer/google-plus-icn.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="privacy-policy">
+        <div class="row col align-items-baseline">
+          <div class="copyright row col-8">
+            <h6>© 2017 TakeMe Free UI Kit</h6>
+          </div>
+          <div class="pricavy row col">
+            <p class="col row justify-content-end">Privacy Policy</p>
+            <p class="col row justify-content-end">Terms of Use</p>
+            <p class="col row justify-content-end">Cookies Policy</p>
+          </div>
         </div>
       </div>
     </div>

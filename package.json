@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap-icons": "^1.5.0",
     "browser-sync": "^2.2.3",
     "gulp-autoprefixer": "^2.1.0",
     "gulp-clean-css": "^4.0.0",
@@ -28,7 +29,7 @@
     "sass": "^1.38.1"
   },
   "devDependencies": {
-    "bootstrap": "5.0.2",
+    "bootstrap": "^5.1.1",
     "gh-pages": "^3.2.3",
     "gulp": "^3.8.11",
     "gulp-concat": "^2.6.1",
