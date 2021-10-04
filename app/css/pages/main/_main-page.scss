@@ -94,6 +94,7 @@
 .activities {
   background-color: $white-smoke;
   border-top: 1.25rem solid $light-grey;
+  overflow: hidden;
   .items {
     padding-top: 4.75rem;
     padding-bottom: 4.75rem;
@@ -377,6 +378,7 @@
 .search-travel {
   background-color: $white-smoke;
   border-top: 1.25rem solid $light-grey;
+  overflow: hidden;
   .title {
     margin-top: 3.5rem;
     margin-bottom: 2.438rem;

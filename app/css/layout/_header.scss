@@ -5,7 +5,8 @@
   li {
     text-align: center;
     font-size: 18px;
-    line-height: 0.28;
+    line-height: 18px;
+    margin-left: 15px;
     a {
       color: $night-rider !important;
     }
@@ -14,6 +15,7 @@
 .head__body {
   background: url(../../img/header/bg-header.png) 0 0 / cover no-repeat;
   height: 600px;
+  margin-top: 70px;
   .head__title {
     padding-top: 11.68rem;
     h1 {

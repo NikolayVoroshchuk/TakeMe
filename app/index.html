@@ -20,21 +20,37 @@
 
 <body id="main-page">
   <header class="head">
-    <div class="container">
-      <nav class="navbar row">
-        <div class="navbar-brand col-2">
-          <a href=""><img src="./img/header/logo.png" alt=""></a>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+      <div class="container">
+        <a class="navbar-brand col-3" href="#"><img src="./img/header/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Locations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Accommodation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Travel Guides</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Where To Stay</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Log In</a>
+            </li>
+          </ul>
         </div>
-        <ul class="nav col">
-          <li class="nav-item col"><a class="nav-link active" href="#">Locations</a></li>
-          <li class="nav-item col"><a class="nav-link active" href="#">Accommodation</a></li>
-          <li class="nav-item col"><a class="nav-link active" href="#">Travel Guides</a></li>
-          <li class="nav-item col"><a class="nav-link active" href="#">Where To Stay </a></li>
-          <li class="nav-item col"><a class="nav-link active" href="#">Contact Us</a></li>
-          <li class="nav-item col"><a class="nav-link active" href="#">Log In</a></li>
-        </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
     <div class="head__body">
       <div class="container">
         <div class="head__title">
@@ -43,8 +59,8 @@
         <div class="head__subtitle">
           <h4>Search hundreds of locations from around the world <br> and find your perfect vacation location.</h4>
         </div>
-        <form class="row col-auto form" action="#">
-          <div class="col-4">
+        <form class="form row col" action="#">
+          <div class="col-3">
             <input type="text" class="country_or_zip" placeholder="Country or ZIP code">
           </div>
           <div class="col-3">
@@ -58,7 +74,7 @@
           <div class="col-3">
             <input type="text" class="number_of_people" placeholder="Number of people">
           </div>
-          <div class="col">
+          <div class="col-3">
             <button type="button" class="btn btn-info">Submit</button>
           </div>
         </form>
@@ -69,7 +85,7 @@
   <section class="santorini">
     <div class="container">
       <div class="row content">
-        <div class="col-6 content__text">
+        <div class="col-6 col-sm-6 col-md-6 content__text">
           <div class="content__title">
             <h1>Magical Santorini <br> Greece’s Jewel</h1>
           </div>
@@ -81,7 +97,7 @@
             <button type="button" class="btn btn-info">Explore More</button>
           </div>
         </div>
-        <div class="col-6 row content__images">
+        <div class="col-6 col-sm-6 col-md-6 row content__images">
           <div class="col content__img">
             <img src="./img/santorini/img.png" alt="">
           </div>
@@ -92,7 +108,7 @@
             <img src="./img/santorini/img3.png" alt="">
           </div>
         </div>
-        <div class="dots col d-flex justify-content-center">
+        <div class="dots col col-sm col-md d-flex justify-content-center">
           <div class="dot">
             <img src="./img/santorini/circle.png" alt="">
           </div>
@@ -116,7 +132,7 @@
   <section class="suggestions">
     <div class="container">
       <div class="row items">
-        <ul class="item__body col-4">
+        <ul class="item__body col-4 col-sm-4 col-md-4">
           <li class="item__img">
             <img src="./img/suggestions/img1.png" alt="">
           </li>
@@ -154,7 +170,7 @@
           </form>
         </ul>
 
-        <ul class="item__body col-4">
+        <ul class="item__body col-4 col-sm-4 col-md-4">
           <li class="item__img">
             <img src="./img/suggestions/img2.png" alt="">
           </li>
@@ -191,7 +207,7 @@
           </form>
         </ul>
 
-        <ul class="item__body col-4">
+        <ul class="item__body col-4 col-sm-4 col-md-4">
           <li class="item__img">
             <img src="./img/suggestions/img3.png" alt="">
           </li>
@@ -257,15 +273,15 @@
                 </div>
               </form>
             </div>
-            <div class="item__rating">
+            <div class="item__rating col-sm col-md">
               <div class="item__rating-text">
                 <span>126 Visited</span>
               </div>
             </div>
-            <div class="items__text">
+            <div class="items__text col-sm col-md">
               <span>Professional Guides</span>
             </div>
-            <div class="items__title">
+            <div class="items__title col-sm col-md">
               <span>Sea Voyages</span>
             </div>
           </div>
