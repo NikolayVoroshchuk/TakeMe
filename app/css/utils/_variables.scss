@@ -12,6 +12,10 @@ $sunshade: #fa9d4c;
 $link-water: #ced4da;
 // 2. Breakpoints
 // ========================================
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
 
-// 3. Bootstrap
-// ========================================
+$max-screen-sm: "all and (max-width: #{$screen-sm})";
+$max-screen-md: "all and (max-width: #{$screen-md})";
+$max-screen-lg: "all and (max-width: #{$screen-lg})";
