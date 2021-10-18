@@ -80,8 +80,17 @@
         transform: none;
       }
       .dot {
-        margin-right: 0.75rem;
+        border-radius: 50%;
+        background: $light-grey;
+        height: 15px;
+        width: 15px;
+        margin-right: 8px;
         cursor: pointer;
+        &:first-child {
+          border: 2px solid $summer-sky;
+          height: 16px;
+          width: 16px;
+        }
       }
     }
   }
@@ -123,10 +132,7 @@
         }
       }
       @media (max-width: #{$screen-xl}) {
-        &:nth-child(2) {
-          margin-top: 0rem;
-          margin-bottom: 0rem;
-        }
+        width: 33.3333%;
       }
       .item__img {
         img {
@@ -142,7 +148,7 @@
             height: 450px;
           }
           @media (max-width: #{$screen-xl}) {
-            height: 500px;
+            height: 300px;
           }
         }
       }
@@ -159,11 +165,17 @@
       }
       .item_subtitle {
         margin-bottom: 1.438rem;
+
         span {
           color: $grey;
           @media (max-width: #{$screen-md}) {
             font-size: initial;
           }
+        }
+      }
+      .last-child {
+        @media (max-width: #{$screen-xl}) {
+          margin-bottom: auto;
         }
       }
       .form-stars {
@@ -224,8 +236,7 @@
           height: 400px;
         }
         @media (max-width: #{$screen-xl}) {
-          max-width: 100%;
-          height: 400px;
+          width: 33%;
         }
         .form-stars {
           @extend %stars;
@@ -247,9 +258,6 @@
           font-size: 14px;
           color: #fff;
           @media (max-width: #{$screen-lg}) {
-            padding-top: 12.5rem;
-          }
-          @media (max-width: #{$screen-xl}) {
             padding-top: 12.5rem;
           }
         }
@@ -282,10 +290,7 @@
           margin-bottom: 10px;
         }
         @media (max-width: #{$screen-xl}) {
-          max-width: 100%;
-          height: 400px;
-          margin-top: 10px;
-          margin-bottom: 10px;
+          width: 33%;
         }
         .form-stars {
           @extend %stars;
@@ -296,9 +301,6 @@
         }
         .items__text {
           @media (max-width: #{$screen-lg}) {
-            padding-top: 12.5rem;
-          }
-          @media (max-width: #{$screen-xl}) {
             padding-top: 12.5rem;
           }
         }
@@ -321,8 +323,7 @@
           height: 400px;
         }
         @media (max-width: #{$screen-xl}) {
-          max-width: 100%;
-          height: 400px;
+          width: 33%;
         }
         .form-stars {
           @extend %stars;
@@ -333,9 +334,6 @@
         }
         .items__text {
           @media (max-width: #{$screen-lg}) {
-            padding-top: 12.5rem;
-          }
-          @media (max-width: #{$screen-xl}) {
             padding-top: 12.5rem;
           }
         }

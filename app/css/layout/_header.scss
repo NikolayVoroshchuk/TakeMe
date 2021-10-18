@@ -18,27 +18,20 @@
   margin-top: 70px;
   .head__title {
     padding-top: 11.68rem;
-    @media all and (max-width: 375px) {
-      padding-top: 6.68rem;
-    }
     @media (max-width: #{$screen-md}) {
       padding-top: 9rem;
     }
+    @media all and (max-width: 375px) {
+      padding-top: 6.68rem;
+    }
+
     h1 {
       color: $white;
       font-size: 47px;
       font-weight: bold;
       text-align: left;
-      @media all and (max-width: 375px) {
-        font-size: 43px;
+      @media (max-width: #{$screen-xl}) {
         text-align: center;
-      }
-      @media (max-width: #{$screen-sm}) {
-        text-align: center;
-      }
-      @media (max-width: #{$screen-md}) {
-        text-align: center;
-        font-size: 44px;
         br {
           display: none;
         }
@@ -49,11 +42,19 @@
           display: none;
         }
       }
-      @media (max-width: #{$screen-xl}) {
+      @media (max-width: #{$screen-md}) {
         text-align: center;
+        font-size: 44px;
         br {
           display: none;
         }
+      }
+      @media (max-width: #{$screen-sm}) {
+        text-align: center;
+      }
+      @media all and (max-width: 375px) {
+        font-size: 43px;
+        text-align: center;
       }
     }
   }
@@ -98,13 +99,14 @@
   }
   .form {
     padding-top: 3rem;
-    @media (max-width: #{$screen-sm}) {
-      padding-top: 1.5rem;
-    }
     ::placeholder {
       font-size: 12px;
       color: $pink-swan;
     }
+    @media (max-width: #{$screen-sm}) {
+      padding-top: 1.5rem;
+    }
+
     .country_or_zip {
       width: 100%;
       height: 40px;
