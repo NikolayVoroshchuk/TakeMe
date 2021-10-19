@@ -4,6 +4,9 @@
   font-size: 25px;
   font-weight: 700;
   cursor: pointer;
+  @media #{$max-screen-lg} {
+    display: none;
+  }
 }
 %stars {
   display: flex;
@@ -13,12 +16,6 @@
     position: relative;
     font-size: 25px;
     display: inline-block;
-    @media (max-width: #{$screen-md}) {
-      font-size: 35px;
-    }
-    @media (max-width: #{$screen-lg}) {
-      font-size: 35px;
-    }
     &:before {
       content: "★★★★★";
       display: block;
