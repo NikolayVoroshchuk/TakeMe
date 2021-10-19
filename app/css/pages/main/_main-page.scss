@@ -646,6 +646,13 @@
           }
         }
       }
+      .review__img {
+        img {
+          @media all and (max-width: 375px) {
+            width: 100%;
+          }
+        }
+      }
       .comment {
         .review__title {
           font-size: 16px;

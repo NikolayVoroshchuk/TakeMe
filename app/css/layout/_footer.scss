@@ -1,6 +1,7 @@
 .footer {
   background-color: $white-smoke;
   border-top: 1.25rem solid $light-grey;
+  overflow: hidden;
   .footer__body {
     margin-top: 5rem;
     align-items: baseline;
@@ -74,8 +75,15 @@
           margin-right: 1rem;
         }
         @media all and (max-width: 375px) {
+          max-width: 30px;
+          height: 25px;
+          padding-top: 0px;
           margin-right: 10px;
-          margin-bottom: 40px;
+        }
+        a {
+          @media all and (max-width: 375px) {
+            margin-left: -3px;
+          }
         }
       }
     }
@@ -89,6 +97,10 @@
         @media #{$max-screen-md} {
           text-align: center;
           transform: translateX(40px);
+        }
+        @media all and (max-width: 375px) {
+          text-align: center;
+          transform: translateX(0px);
         }
       }
     }
